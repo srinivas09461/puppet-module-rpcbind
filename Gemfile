@@ -49,6 +49,7 @@ gem "puppet-strings",                                   require: false
 gem "puppetlabs_spec_helper",                           require: false
 gem "rspec-puppet",                                     require: false
 gem "serverspec",                                       require: false
+gem "rspec-puppet-facts", '~> 2.0',                     require: false
 
 puppet_version = ENV['PUPPET_GEM_VERSION']
 facter_version = ENV['FACTER_GEM_VERSION']
