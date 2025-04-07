@@ -19,18 +19,8 @@ group :development do
   #gem "json", '= 2.5.1',                         require: false if Gem::Requirement.create(['>= 3.0.0', '< 3.0.5']).satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
   #gem "json", '= 2.6.1',                         require: false if Gem::Requirement.create(['>= 3.1.0', '< 3.1.3']).satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
   #gem "json", '= 2.6.3',                         require: false if Gem::Requirement.create(['>= 3.2.0', '< 4.0.0']).satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
-  gem "json", '= 2.3.0',                          require: false if Gem::Requirement.create(['>= 2.7.0', '< 3.0.0']).satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
-  
-  # Conditionally set Puppet version
-  if RUBY_VERSION.start_with?('2.7')
-    gem "puppet", '~> 6.0',                      require: false
-    gem "rspec-puppet-facts", '~> 4.0',          require: false
-  end
-  
-  if RUBY_VERSION.start_with?('2.7')
-    gem "puppet", '~> 7.0',                      require: false
-    gem "rspec-puppet-facts", '~> 4.0',          require: false
-  end
+  gem "json", '= 2.3.0',                         require: false if Gem::Requirement.create(['>= 2.7.0', '< 3.0.0']).satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
+  gem "puppet", '>= 6.0', '< 8.0',               require: false 
   gem "racc", '~> 1.4.0',                        require: false if Gem::Requirement.create(['>= 2.7.0', '< 3.0.0']).satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
   gem "deep_merge", '~> 1.2.2',                  require: false
   gem "voxpupuli-puppet-lint-plugins", '~> 5.0', require: false
