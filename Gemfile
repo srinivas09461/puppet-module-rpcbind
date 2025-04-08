@@ -35,6 +35,12 @@ group :development do
   gem "rubocop-rspec", '= 2.19.0',               require: false
   gem "rb-readline", '= 0.5.5',                  require: false, platforms: [:mswin, :mingw, :x64_mingw]
   gem "rexml", '>= 3.0.0', '< 3.2.7',            require: false
+  gem "beaker",                                  require: false
+  gem "beaker-docker",                           require: false
+  gem "beaker-module_install_helper",            require: false
+  gem "beaker-puppet",                           require: false
+  gem "beaker-puppet_install_helper",            require: false
+  gem "beaker-rspec",                            require: false
 end
 group :development, :release_prep do
   gem "puppet-strings", '~> 4.0',         require: false
