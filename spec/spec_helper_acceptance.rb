@@ -1,13 +1,6 @@
-require 'beaker-rspec'
-require 'beaker-puppet'
-require 'beaker/module_install_helper'
-require 'beaker/puppet_install_helper'
+# frozen_string_literal: true
 
-run_puppet_install_helper
-install_module_dependencies
-install_module
+require 'puppet_litmus'
+PuppetLitmus.configure!
 
-RSpec.configure do |c|
-  # Readable test descriptions
-  c.formatter = :documentation
-end
+require 'spec_helper_acceptance_local' if File.file?(File.join(File.dirname(__FILE__), 'spec_helper_acceptance_local.rb'))
