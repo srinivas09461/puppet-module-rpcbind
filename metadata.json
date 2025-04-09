@@ -70,7 +70,8 @@
       "operatingsystemrelease": [
         "18.04",
         "20.04",
-        "22.04"
+        "22.04",
+        "24.04"
       ]
     }
   ],
@@ -81,7 +82,7 @@
     }
   ],
   "description": "Manages rpcbind",
-  "pdk-version": "2.2.0",
+  "pdk-version": "3.3.0",
   "template-url": "https://github.com/puppetlabs/pdk-templates#main",
-  "template-ref": "heads/main-0-gfe51af3"
+  "template-ref": "heads/main-0-ga4c6aee"
 }

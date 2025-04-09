@@ -146,5 +146,39 @@ def platforms
         :package_name => 'rpcbind',
         :service_name => 'rpcbind',
       },
+    'ubuntu2204' =>
+      {
+        :facts_hash => {
+          :osfamily => 'Debian',
+          :operatingsystem => 'Ubuntu',
+          :os => {
+            'release' => {
+              'full'  => '22.04',
+              'major' => '22.04'
+            },
+            'name'   => 'Ubuntu',
+            'family' => 'Debian'
+          },
+        },
+        :package_name => 'rpcbind',
+        :service_name => 'rpcbind',
+      },
+    'ubuntu2404' =>
+      {
+        :facts_hash => {
+          :osfamily => 'Debian',
+          :operatingsystem => 'Ubuntu',
+          :os => {
+            'release' => {
+              'full'  => '24.04',
+              'major' => '24.04'
+            },
+            'name'   => 'Ubuntu',
+            'family' => 'Debian'
+          },
+        },
+        :package_name => 'rpcbind',
+        :service_name => 'rpcbind',
+      },
   }
 end
